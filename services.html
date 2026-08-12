@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Prime Byte Enterprise</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #1e2a47;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3b85 0%, #122657 100%);
+            padding: 26px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 28px;
+            letter-spacing: 0.02em;
+        }
+
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 28px 60px rgba(15, 44, 110, 0.08);
+            padding: 40px 36px;
+            text-align: center;
+            margin-bottom: 36px;
+        }
+
+        .hero h2 {
+            color: #061a46;
+            font-size: 34px;
+            margin-bottom: 16px;
+        }
+
+        .hero p {
+            margin: 0 auto;
+            max-width: 760px;
+            color: #4e5e80;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .cta-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 26px;
+        }
+
+        .cta-btn,
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        }
+
+        .back-btn {
+            background-color: #1e2a47;
+            color: white;
+        }
+
+        .cta-btn {
+            background-color: #18b0ff;
+            color: #061a46;
+        }
+
+        .back-btn:hover,
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(15, 44, 110, 0.12);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 24px 56px rgba(15, 44, 110, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 28px 68px rgba(15, 44, 110, 0.14);
+        }
+
+        .service-card img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            height: 220px;
+        }
+
+        .service-card .service-content {
+            padding: 24px;
+        }
+
+        .service-card h3 {
+            color: #061a46;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .service-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #4f5b76;
+            margin: 0;
+        }
+
+        .service-card:nth-child(1) { animation-delay: 0.08s; }
+        .service-card:nth-child(2) { animation-delay: 0.16s; }
+        .service-card:nth-child(3) { animation-delay: 0.24s; }
+        .service-card:nth-child(4) { animation-delay: 0.32s; }
+        .service-card:nth-child(5) { animation-delay: 0.40s; }
+        .service-card:nth-child(6) { animation-delay: 0.48s; }
+        .service-card:nth-child(7) { animation-delay: 0.56s; }
+        .service-card:nth-child(8) { animation-delay: 0.64s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0 36px;
+            color: #72809a;
+            font-size: 14px;
+        }
+
+        @media (max-width: 680px) {
+            .hero {
+                padding: 28px 24px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .cta-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Prime Byte Enterprise</h1>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Technology services built for growth</h2>
+            <p>Prime Byte Enterprise delivers modern software, data intelligence, cloud integration, and security solutions that help businesses operate smarter. Explore our services and take the next step toward reliable digital transformation.</p>
+            <div class="cta-row">
+                <a href="index.html" class="back-btn">&larr; Back to Home</a>
+                <a href="quote.html" class="cta-btn">Request a Quote</a>
+            </div>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/work5.jpg" alt="Custom Software Development">
+                <div class="service-content">
+                    <h3>Custom Software Development</h3>
+                    <p>Craft scalable web and mobile applications with intuitive user experiences and secure backend systems.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/work6.jpg" alt="Data Analytics & Business Intelligence">
+                <div class="service-content">
+                    <h3>Data Analytics & Business Intelligence</h3>
+                    <p>Unlock deeper insights with reporting, dashboards, and predictive analytics that inform smarter decisions.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/work7.jpg" alt="Cloud Integration & Modernization">
+                <div class="service-content">
+                    <h3>Cloud Integration & Modernization</h3>
+                    <p>Accelerate your infrastructure with cloud migration, API connectivity, and platform automation.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/work8.jpg" alt="IT Strategy & Consulting">
+                <div class="service-content">
+                    <h3>IT Strategy & Consulting</h3>
+                    <p>Align technology investments with business goals through practical planning and digital roadmap guidance.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/detail1.png" alt="Process Automation">
+                <div class="service-content">
+                    <h3>Process Automation</h3>
+                    <p>Remove manual bottlenecks with workflow automation, intelligent operations, and systems orchestration.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/detail2.png" alt="Security & Compliance">
+                <div class="service-content">
+                    <h3>Security & Compliance</h3>
+                    <p>Protect your systems with cybersecurity best practices, risk management, and compliance readiness.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/detail3.png" alt="Performance Optimization">
+                <div class="service-content">
+                    <h3>Performance Optimization</h3>
+                    <p>Enhance reliability and speed with infrastructure tuning, code improvements, and operational monitoring.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="images/detail4.png" alt="Support & Managed Services">
+                <div class="service-content">
+                    <h3>Support & Managed Services</h3>
+                    <p>Stay productive with proactive support, maintenance, and ongoing technology care.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Prime Byte Enterprise. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

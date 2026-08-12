@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Prime Byte Enterprise</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #eef4fb;
+            color: #1e2a47;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3b85 0%, #122657 100%);
+            padding: 26px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #fff;
+            letter-spacing: 0.04em;
+        }
+
+        .page-wrap {
+            max-width: 1000px;
+            margin: 36px auto 60px;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 28px 60px rgba(15, 44, 110, 0.08);
+            padding: 40px 38px 30px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            color: #061a46;
+        }
+
+        .hero p {
+            margin: 0 auto;
+            max-width: 760px;
+            color: #4f5b76;
+            line-height: 1.75;
+            font-size: 17px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: #18b0ff;
+            color: #061a46;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 32px rgba(24, 176, 255, 0.18);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 24px 56px rgba(15, 44, 110, 0.08);
+            padding: 28px 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 68px rgba(15, 44, 110, 0.12);
+        }
+
+        .project-card h3 {
+            margin: 0 0 10px;
+            color: #061a46;
+            font-size: 22px;
+        }
+
+        .project-card p {
+            margin: 0;
+            color: #52608f;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .section-title {
+            color: #061a46;
+            margin: 40px 0 22px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .cta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            background: #1e2a47;
+            color: white;
+            border-radius: 999px;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0 30px;
+            color: #72809a;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Prime Byte Enterprise</h1>
+</header>
+<div class="page-wrap">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <div class="hero">
+        <h2>Featured digital solutions and successful results</h2>
+        <p>Explore a selection of our recent projects where we delivered software, analytics, cloud, and automation solutions that help clients compete with agility.</p>
+    </div>
+
+    <h2 class="section-title">Featured projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Operational Intelligence Platform</h3>
+            <p>Delivered a cloud-based operations dashboard that centralizes metrics, automates alerts, and speeds decision-making for manufacturing leadership.</p>
+        </div>
+        <div class="project-card">
+            <h3>Customer Analytics Suite</h3>
+            <p>Built a BI solution that transforms customer behavior into actionable insights and improves retention through data-driven recommendations.</p>
+        </div>
+        <div class="project-card">
+            <h3>Cloud Migration & Modernization</h3>
+            <p>Modernized legacy systems onto a secure cloud platform, reducing infrastructure costs and accelerating deployment cycles.</p>
+        </div>
+        <div class="project-card">
+            <h3>End-to-End Automation</h3>
+            <p>Automated critical workflows across sales, operations, and finance, freeing teams to focus on strategic work instead of manual tasks.</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">How we create value</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Discovery & planning</h3>
+            <p>We start by understanding business goals, user needs, and technical constraints to shape a solution that delivers value quickly.</p>
+        </div>
+        <div class="project-card">
+            <h3>Design & build</h3>
+            <p>We combine modern UX design, agile engineering, and automated testing to deliver scalable digital products.</p>
+        </div>
+        <div class="project-card">
+            <h3>Launch & support</h3>
+            <p>We launch with confidence and provide ongoing support, monitoring, and improvement to sustain performance over time.</p>
+        </div>
+    </div>
+
+    <div class="cta-bar">
+        <a href="quote.html" class="cta-button">Request a Quote</a>
+        <a href="contact.html" class="cta-button">Talk to Sales</a>
+    </div>
+</div>
+<footer>
+    &copy; 2026 Prime Byte Enterprise. All Rights Reserved.
+</footer>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get a Quote - Prime Byte Enterprise</title>
+<style>
+    body {
+        font-family: 'Inter', Arial, sans-serif;
+        background: #eef4fb;
+        color: #1e2a47;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: linear-gradient(135deg, #0b3b85 0%, #122657 100%);
+        padding: 26px 20px;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        color: #fff;
+        font-size: 28px;
+        letter-spacing: 0.04em;
+    }
+
+    .page-wrap {
+        max-width: 920px;
+        margin: 36px auto 60px;
+        padding: 0 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 28px;
+        box-shadow: 0 28px 60px rgba(15, 44, 110, 0.08);
+        overflow: hidden;
+    }
+
+    .card-hero {
+        padding: 40px 36px 30px;
+        text-align: center;
+    }
+
+    .card-hero h2 {
+        font-size: 32px;
+        margin-bottom: 16px;
+        color: #061a46;
+    }
+
+    .card-hero p {
+        margin: 0 auto;
+        max-width: 760px;
+        color: #4f5b76;
+        line-height: 1.8;
+        font-size: 17px;
+    }
+
+    .card-body {
+        padding: 30px 36px 42px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+    }
+
+    .field-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    label {
+        font-weight: 700;
+        color: #21325f;
+    }
+
+    input, textarea, select {
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #d6dcea;
+        border-radius: 16px;
+        font-size: 15px;
+        color: #1e2a47;
+        transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        border-color: #18b0ff;
+        box-shadow: 0 0 0 4px rgba(24, 176, 255, 0.12);
+        outline: none;
+    }
+
+    textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 10px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        border: none;
+        border-radius: 16px;
+        padding: 14px 22px;
+        cursor: pointer;
+        font-weight: 700;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .btn-primary {
+        background: #18b0ff;
+        color: #061a46;
+    }
+
+    .btn-secondary {
+        background: #1e2a47;
+        color: white;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 32px rgba(15, 44, 110, 0.16);
+    }
+
+    .success-message {
+        display: none;
+        margin-top: 18px;
+        padding: 18px 20px;
+        background: #e7f7ed;
+        border: 1px solid #c6e8d9;
+        border-radius: 20px;
+        color: #155724;
+        font-weight: 600;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 0 30px;
+        color: #72809a;
+        font-size: 14px;
+    }
+
+    @media (max-width: 840px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .card-hero h2 {
+            font-size: 28px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Prime Byte Enterprise</h1>
+</header>
+
+<div class="page-wrap">
+    <div class="card">
+        <div class="card-hero">
+            <h2>Request a quote for your next tech initiative</h2>
+            <p>Send us the details and we’ll respond with a tailored proposal for software, analytics, cloud, or automation work.</p>
+        </div>
+        <div class="card-body">
+            <form id="quoteForm">
+                <div class="form-grid">
+                    <div class="field-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="you@company.com" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+1 (800) 123-4567" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="service">Select Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Choose a service</option>
+                            <option value="custom-software">Custom Software Development</option>
+                            <option value="data-analytics">Data Analytics & BI</option>
+                            <option value="cloud-integration">Cloud Integration</option>
+                            <option value="it-consulting">IT Strategy & Consulting</option>
+                            <option value="automation">Automation & Optimization</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" placeholder="Describe your goals, timeline, and key requirements" required></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn-primary">Submit Request</button>
+                    <button type="button" class="btn-secondary" onclick="history.back()">Go Back</button>
+                </div>
+
+                <div class="success-message" id="successMessage">✅ Your quote request has been submitted successfully. We’ll reply soon.</div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Prime Byte Enterprise. All Rights Reserved.
+</footer>
+
+<script>
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('successMessage').style.display = 'block';
+        this.reset();
+    });
+</script>
+
+</body>
+</html>

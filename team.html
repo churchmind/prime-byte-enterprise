@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Prime Byte Enterprise</title>
+    <style>
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: #eef4fb;
+            color: #1e2a47;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b3b85 0%, #122657 100%);
+            padding: 26px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #fff;
+            letter-spacing: 0.04em;
+        }
+
+        .page-wrap {
+            max-width: 980px;
+            margin: 36px auto 60px;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 28px 60px rgba(15, 44, 110, 0.08);
+            padding: 40px 38px 30px;
+            text-align: center;
+            margin-bottom: 34px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            color: #061a46;
+        }
+
+        .hero p {
+            margin: 0 auto;
+            max-width: 760px;
+            color: #4f5b76;
+            line-height: 1.75;
+            font-size: 17px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            padding: 12px 24px;
+            border-radius: 999px;
+            background: #18b0ff;
+            color: #061a46;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 32px rgba(24, 176, 255, 0.18);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 24px 56px rgba(15, 44, 110, 0.08);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 68px rgba(15, 44, 110, 0.12);
+        }
+
+        .profile-image {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            display: block;
+        }
+
+        .profile-content {
+            padding: 24px;
+        }
+
+        .profile-name {
+            margin: 0 0 8px;
+            color: #061a46;
+            font-size: 22px;
+        }
+
+        .profile-role {
+            margin: 0 0 16px;
+            color: #18b0ff;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+        }
+
+        .profile-bio {
+            margin: 0;
+            color: #52608f;
+            line-height: 1.75;
+            font-size: 15px;
+        }
+
+        .section-title {
+            color: #061a46;
+            margin: 40px 0 22px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .cta-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            background: #1e2a47;
+            color: white;
+            border-radius: 999px;
+            padding: 14px 28px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 18px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0 30px;
+            color: #72809a;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Prime Byte Enterprise</h1>
+</header>
+<div class="page-wrap">
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+    <div class="hero">
+        <h2>Meet the team powering your next transformation</h2>
+        <p>Our multi-disciplinary specialists combine software engineering, data science, cloud architecture, and customer-centered design to deliver measurable business outcomes.</p>
+    </div>
+
+    <div class="team-grid">
+        <div class="profile-card">
+            <img src="images/1785429294026.png" alt="Stephen Joseph Josiah" class="profile-image">
+            <div class="profile-content">
+                <h3 class="profile-name">Stephen Joseph Josiah</h3>
+                <p class="profile-role">Chief Technology Officer</p>
+                <p class="profile-bio">Stephen leads product, IT support delivery, helping teams turn business goals into scalable software solutions.</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="images/work2.jpg" alt="Solomon Stephen" class="profile-image">
+            <div class="profile-content">
+                <h3 class="profile-name">Solomon Stephen</h3>
+                <p class="profile-role">Head of Data & Analytics</p>
+                <p class="profile-bio">Solomon shapes analytics strategy and builds data platforms that power smarter decision-making across client operations.</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="images/work3.jpg" alt="Bethsuah Joseph" class="profile-image">
+            <div class="profile-content">
+                <h3 class="profile-name">Bethsuah Joseph</h3>
+                <p class="profile-role">Principal UX Designer</p>
+                <p class="profile-bio">Bethsuah designs intuitive digital experiences focused on simplicity, accessibility, and customer engagement.</p>
+            </div>
+        </div>
+        <div class="profile-card">
+            <img src="images/1785429294042.jpg" alt="Alfred Ubandoma" class="profile-image">
+            <div class="profile-content">
+                <h3 class="profile-name">Alfred Ubandoma</h3>
+                <p class="profile-role">Cloud & Infrastructure Lead</p>
+                <p class="profile-bio">Alfred architects cloud platforms and infrastructure, ensuring solutions are secure, resilient, and efficient at scale.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Why our team stands out</h2>
+    <div class="team-grid">
+        <div class="team-card">
+            <h3>Collaborative approach</h3>
+            <p>We partner closely with your team to understand needs, adapt quickly, and keep delivery aligned with priorities.</p>
+        </div>
+        <div class="team-card">
+            <h3>Modern practices</h3>
+            <p>We use agile delivery, continuous improvement, and cloud-native tooling to help projects launch reliably and faster.</p>
+        </div>
+        <div class="team-card">
+            <h3>Business-first thinking</h3>
+            <p>Our recommendations are grounded in measurable results, not just technology for technology’s sake.</p>
+        </div>
+    </div>
+
+    <div class="cta-bar">
+        <a href="quote.html" class="cta-button">Request a Quote</a>
+        <a href="contact.html" class="cta-button">Contact the Team</a>
+    </div>
+</div>
+<footer>
+    &copy; 2025 Prime Byte Enterprise. All Rights Reserved.
+</footer>
+</body>
+</html>
